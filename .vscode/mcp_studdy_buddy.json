@@ -1,0 +1,20 @@
+{
+"inputs": [
+],
+"servers": {
+      "learnpython-mcp": {
+         // "command": "/home/codespace/.python/current/bin/uv",
+         "command": "uv",
+         "args": [
+            "--directory",
+            ".",
+            "run",
+            // "prompts_server.py"
+            // "tools_server.py"
+            // "resources_server.py"
+            // "server_part_2.py"
+            "AIResearchHub/server.py"
+         ],
+      }
+}
+}

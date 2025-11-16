@@ -23,7 +23,7 @@ async def get_study_progress(username: str) -> str:
         # Read study progress from JSON file
         with open(study_progress_file, 'r') as file:
             study_progress = json.load(file)
-        
+
         # Check if the username matches (for this simple example)
         if study_progress.get("user_name") == username:
             return json.dumps(study_progress, indent=2)
@@ -50,11 +50,11 @@ async def list_exercises_for_level(level: str) -> str:
             return json.dumps({
                 "error": f"No exercises found for level '{level}'"
             })
-            
+
         # Read exercises from JSON file
         with open(beginner_exercises_file, 'r') as file:
             exercises = json.load(file)
-            
+
         return json.dumps(exercises, indent=2)
     except FileNotFoundError:
         return json.dumps({
@@ -64,7 +64,7 @@ async def list_exercises_for_level(level: str) -> str:
         return json.dumps({
             "error": "Invalid exercises file format"
         })
-    
+
 @mcp.tool()
 async def get_users_progress(
         username: str,
@@ -77,7 +77,7 @@ async def get_users_progress(
             user_progress_json = await get_study_progress(username)
             # Parse the generated JSON
             user_progress = json.loads(user_progress_json)
-            prompt_text = f"""Here is the study progress for user '{username}':\n\n{json.dumps(user_progress, indent=2)}. 
+            prompt_text = f"""Here is the study progress for user '{username}':\n\n{json.dumps(user_progress, indent=2)}.
             Return it to the user and suggest some topics they can study next based on their progress."""
 
             response = await ctx.session.create_message(
@@ -89,14 +89,21 @@ async def get_users_progress(
                 ],
                 max_tokens=2000,
                 )
-            
+
             # Extract the text from the response
             response_text = response.content.text if response.content else ""
             return response_text
-        
+
         except Exception as e:
             return f"❌ Error: {str(e)}"
 
 
 if __name__ == "__main__":
-    mcp.run()
+    import sys
+    try:
+        mcp.run()
+    except Exception as e:
+        print(f"Server error: {e}", file=sys.stderr)
+        import traceback
+        traceback.print_exc()
+        sys.exit(1)

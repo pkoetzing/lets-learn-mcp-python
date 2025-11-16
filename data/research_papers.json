@@ -1,0 +1,85 @@
+[
+  {
+    "id": 1,
+    "topic": "diffusion models",
+    "created": "2025-11-16T19:27:00.099407",
+    "status": "pending",
+    "papers_found": [],
+    "repositories_found": [
+      {
+        "name": "DDPM",
+        "url": "https://github.com/hojonathanho/diffusion",
+        "stars": 5000
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": 2,
+    "topic": "diffusion models",
+    "created": "2025-11-16T19:34:42.563353",
+    "status": "pending",
+    "papers_found": [],
+    "repositories_found": [],
+    "notes": ""
+  },
+  {
+    "id": 3,
+    "topic": "HuggingFace diffusion models",
+    "created": "2025-11-16T19:35:17.328678",
+    "status": "pending",
+    "papers_found": [],
+    "repositories_found": [],
+    "notes": ""
+  },
+  {
+    "id": 4,
+    "topic": "diffusion models implementations on GitHub",
+    "created": "2025-11-16T19:35:24.862911",
+    "status": "complete",
+    "papers_found": [
+      {
+        "title": "Denoising Diffusion Probabilistic Models (DDPM)",
+        "authors": "Ho, Jascha and others",
+        "url": "https://arxiv.org/abs/2006.11239"
+      },
+      {
+        "title": "Improved Denoising Diffusion Probabilistic Models",
+        "authors": "Nichol, Jonathan and Dhariwal, Prafulla",
+        "url": "https://arxiv.org/abs/2102.09672"
+      },
+      {
+        "title": "Score-Based Generative Modeling through Stochastic Differential Equations",
+        "authors": "Song, Yang and others",
+        "url": "https://arxiv.org/abs/2011.13456"
+      }
+    ],
+    "repositories_found": [
+      {
+        "name": "diffusers",
+        "url": "https://github.com/huggingface/diffusers",
+        "stars": 107000
+      },
+      {
+        "name": "denoising-diffusion-pytorch",
+        "url": "https://github.com/lucidrains/denoising-diffusion-pytorch",
+        "stars": 11300
+      },
+      {
+        "name": "improved-diffusion",
+        "url": "https://github.com/openai/improved-diffusion",
+        "stars": 19000
+      }
+    ],
+    "notes": "Added canonical papers and top GitHub implementations (HuggingFace diffusers, lucidrains, OpenAI improved-diffusion). Linked papers to repositories where applicable."
+  },
+  {
+    "id": 5,
+    "topic": "research://status",
+    "created": "2025-11-16T19:36:48.425546",
+    "status": "pending",
+    "papers_found": [],
+    "repositories_found": [],
+    "notes": ""
+  }
+]

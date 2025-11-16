@@ -54,5 +54,50 @@
       }
     ],
     "notes": "Comprehensive research completed on few-shot learning. Found key papers covering state-of-the-art methods, environmental robustness, multilingual approaches, and simple pipeline improvements. Identified practical implementations including comprehensive libraries (LibFewShot, FSL-Mate), ready-to-use frameworks (SetFit by HuggingFace), and tutorial-focused repositories (easy-few-shot-learning). The research spans both theoretical advances and practical implementation resources."
+  },
+  {
+    "id": 2,
+    "topic": "diffusion models",
+    "created": "2025-11-16T20:12:51.679909",
+    "status": "pending",
+    "papers_found": [],
+    "repositories_found": [],
+    "notes": ""
+  },
+  {
+    "id": 3,
+    "topic": "diffusion models",
+    "created": "2025-11-16T20:14:15.168173",
+    "status": "complete",
+    "papers_found": [
+      {
+        "title": "Denoising Diffusion Probabilistic Models (DDPM)",
+        "authors": "Ho et al.",
+        "url": "https://arxiv.org/abs/2006.11239"
+      },
+      {
+        "title": "Improved Denoising Diffusion Probabilistic Models",
+        "authors": "Nichol & Dhariwal",
+        "url": "https://arxiv.org/abs/2102.09672"
+      }
+    ],
+    "repositories_found": [
+      {
+        "name": "denoising-diffusion-pytorch",
+        "url": "https://github.com/lucidrains/denoising-diffusion-pytorch",
+        "stars": 10176
+      },
+      {
+        "name": "Diffusion-Models-pytorch",
+        "url": "https://github.com/dome272/Diffusion-Models-pytorch",
+        "stars": 1390
+      },
+      {
+        "name": "DiT",
+        "url": "https://github.com/facebookresearch/DiT",
+        "stars": 8029
+      }
+    ],
+    "notes": "Added DDPM, Improved DDPM and top GitHub implementations (lucidrains, dome272, DiT)"
   }
 ]
